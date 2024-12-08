@@ -1,0 +1,224 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Tipografia */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+/* Header */
+header {
+    background: #004080;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header .logo {
+    width: 150px;
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Hero */
+.hero {
+    background: url('../images/hero-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+.btn {
+    display: inline-block;
+    background: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #e65c00;
+}
+
+/* Calculadora */
+.calculator {
+    padding: 40px 0;
+    background: #f4f4f4;
+}
+
+.calculator h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.calculator form {
+    max-width: 500px;
+    margin: auto;
+}
+
+.calculator label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.calculator input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.result {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #e6ffe6;
+    border: 1px solid #b3ffb3;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Depoimentos */
+.testimonials {
+    padding: 40px 0;
+}
+
+.testimonials h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.testimonial {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.testimonial img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.testimonial p {
+    font-style: italic;
+    margin: 10px 0;
+}
+
+.testimonial h4 {
+    color: #004080;
+}
+
+/* Taxas e Condições */
+.rates {
+    padding: 40px 0;
+    background: #f4f4f4;
+}
+
+.rates h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.rates table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.rates th, .rates td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.rates th {
+    background: #004080;
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header nav {
+        float: none;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .btn {
+        padding: 10px 15px;
+    }
+}
+
+.error {
+    background: #ffcccc;
+    color: #cc0000;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #cc0000;
+    text-align: center;
+    border-radius: 5px;
+}

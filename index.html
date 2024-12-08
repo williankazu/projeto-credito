@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crédito e Empréstimos</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <img src="./images/logo.jpg" alt="Logo da Empresa" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#calculadora">Simule seu Empréstimo</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                    <li><a href="#taxas">Taxas e Condições</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção Hero -->
+    <section class="hero">
+        <div class="container">
+            <h1>Obtenha o Crédito que Você Precisa</h1>
+            <p>Crédito pessoal e empresarial com as melhores condições do mercado.</p>
+            <a href="#calculadora" class="btn">Simule Agora</a>
+        </div>
+    </section>
+
+    <!-- Calculadora de Empréstimos -->
+    <section id="calculadora" class="calculator">
+        <div class="container">
+            <h2>Simule seu Empréstimo</h2>
+            <form id="loan-form">
+                <label for="amount">Valor do Empréstimo:</label>
+                <input type="number" id="amount" name="amount" required>
+
+                <label for="interest">Taxa de Juros (%):</label>
+                <input type="number" id="interest" name="interest" step="0.01" required>
+
+                <label for="years">Período (anos):</label>
+                <input type="number" id="years" name="years" required>
+
+                <button type="submit" class="btn">Calcular</button>
+            </form>
+            <div id="result" class="result hidden">
+                <h3>Resultados</h3>
+                <p>Valor Total a Pagar: <span id="total"></span></p>
+                <p>Valor da Parcela Mensal: <span id="monthly"></span></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section id="depoimentos" class="testimonials">
+        <div class="container">
+            <h2>O que Nossos Clientes Dizem</h2>
+            <div class="testimonial">
+                <img src="./images/testemunha.jpg" alt="Cliente 1">
+                <p>"Excelente serviço! Consegui o empréstimo que precisava rapidamente."</p>
+                <h4>Maria Silva</h4>
+            </div>
+            <!-- Adicione mais depoimentos conforme necessário -->
+        </div>
+    </section>
+
+    <!-- Taxas e Condições -->
+    <section id="taxas" class="rates">
+        <div class="container">
+            <h2>Taxas e Condições</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tipo de Empréstimo</th>
+                        <th>Taxa de Juros</th>
+                        <th>Período</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Empréstimo Pessoal</td>
+                        <td>1.2% a.m.</td>
+                        <td>12 a 60 meses</td>
+                    </tr>
+                    <tr>
+                        <td>Empréstimo Empresarial</td>
+                        <td>1.0% a.m.</td>
+                        <td>12 a 84 meses</td>
+                    </tr>
+                    <!-- Adicione mais linhas conforme necessário -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Empresa de Crédito. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
